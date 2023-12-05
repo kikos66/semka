@@ -1,0 +1,78 @@
+.wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    min-height: 100%;
+    padding: 20px;
+}
+
+.pad {
+    padding: 2px;
+}
+
+.padTop {
+    padding-top: 10px;
+}
+
+.divAboutUs {
+    position:relative;
+    backdrop-filter: blur(10px);
+    border: solid white;
+    border-radius: 10px;
+    max-width: 450px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    top: 1%;
+    width: 75%;
+
+}
+
+
+
+.paragraph {
+    padding: 10px;
+    color: white;
+    font-size: medium;
+}
+
+
+.AboutUs {
+    background-image: url("MilitaryWarehouse.jpg");
+    background-color: #cccccc;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(5px);
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    z-index: -1;
+    position: fixed;
+    left: 0;
+    right: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+}
+
+.formContent {
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border-radius: 10px;
+    background: #ffffff;
+    padding: 30px;
+    width: 90%;
+    max-width: 450px;
+    position: relative;
+    -webkit-box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+    box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+    text-align: center;
+}

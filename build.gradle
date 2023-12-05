@@ -1,0 +1,29 @@
+plugins {
+    id 'java'
+}
+
+group = 'VAII'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    maven {
+        url = uri("https://mvnrepository.com/artifact/io.javalin/javalin-rendering")
+    }
+    mavenCentral()
+
+}
+
+dependencies {
+    testImplementation platform('org.junit:junit-bom:5.9.1')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+    implementation 'io.javalin:javalin:5.6.3'
+    implementation("org.slf4j:slf4j-simple:2.0.7")
+    implementation group: 'io.javalin', name: 'javalin-rendering', version: '5.6.2'
+    implementation group: 'gg.jte', name: 'jte', version: '3.1.5'
+    implementation group: 'org.thymeleaf', name: 'thymeleaf', version: '3.1.2.RELEASE'
+    implementation group: 'org.commonmark', name: 'commonmark', version: '0.21.0'
+}
+
+test {
+    useJUnitPlatform()
+}
